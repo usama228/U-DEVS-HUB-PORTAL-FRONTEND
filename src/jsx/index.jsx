@@ -15,7 +15,6 @@ import ScrollToTop from "./layouts/ScrollToTop";
 import WalletBar from './layouts/WalletBar';
 /// Dashboard
 import Home from "./components/Dashboard/Home";
-import Finance from "./components/Dashboard/Finance";
 import DashboardDark from "./components/Dashboard/DashboardDark";
 
 //student
@@ -27,36 +26,8 @@ import AddNewStudent from "./components/Student/AddNewStudent";
 import Teachers from './components/Teacher/Teachers';
 import TeachersDetail from './components/Teacher/TeachersDetail';
 import AddNewTeacher from './components/Teacher/AddNewTeacher';
-//Food
-import Food from './components/Food/Food';
-import FoodDetails from './components/Food/FoodDetails';
 
 
-/// File Manager
-import FileManager from './components/FileManager/FileManager';
-import User from './components/FileManager/User';
-import HomeCalendar from './components/FileManager/HomeCalendar';
-import Activity from './components/FileManager/Activity';
-import FileChat from './components/FileManager/FileChat';
-
-
-/// App
-import AppProfile from "./components/AppsMenu/AppProfile/AppProfile";
-import PostDetails from "./components/AppsMenu/AppProfile/PostDetails";
-import EditProfile from "./components/AppsMenu/AppProfile/EditProfile";
-import Compose from "./components/AppsMenu/Email/Compose/Compose";
-import Inbox from "./components/AppsMenu/Email/Inbox/Inbox";
-import Read from "./components/AppsMenu/Email/Read/Read";
-import Calendar from "./components/AppsMenu/Calendar/Calendar";
-
-/// Product List
-import ProductGrid from "./components/AppsMenu/Shop/ProductGrid/ProductGrid";
-import ProductList from "./components/AppsMenu/Shop/ProductList/ProductList";
-import ProductDetail from "./components/AppsMenu/Shop/ProductGrid/ProductDetail";
-import ProductOrder from "./components/AppsMenu/Shop/ProductOrder";
-import Checkout from "./components/AppsMenu/Shop/Checkout/Checkout";
-import Invoice from "./components/AppsMenu/Shop/Invoice/Invoice";
-import Customers from "./components/AppsMenu/Shop/Customers/Customers";
 
 /// Charts
 import SparklineChart from "./components/charts/Sparkline";
@@ -82,15 +53,6 @@ import UiPagination from "./components/bootstrap/Pagination";
 import UiGrid from "./components/bootstrap/Grid";
 import UiTypography from "./components/bootstrap/Typography";
 
-/// Plugins
-import Select2 from "./components/PluginsMenu/Select2/Select2";
-import MainNouiSlider from "./components/PluginsMenu/NouiSlider/MainNouiSlider";
-import MainSweetAlert from "./components/PluginsMenu/SweetAlert/SweetAlert";
-import Toastr from "./components/PluginsMenu/Toastr/Toastr";
-import Lightgallery from "./components/PluginsMenu/Lightgallery/Lightgallery";
-
-/// Widget
-import Widget from "./pages/Widget";
 
 /// Table
 import SortingTable from "./components/table/SortingTable/SortingTable";
@@ -115,31 +77,14 @@ import { ThemeContext } from "../context/ThemeContext";
 
 const Markup = () => {
   const routhPath = [
-    { url: "finance", component: <Finance /> },
     { url: "student", component: <Students /> },
     { url: "student-detail", component: <StudentDetails /> },
     { url: "add-student", component: <AddNewStudent /> },
     { url: "teacher", component: <Teachers /> },
     { url: "teacher-detail", component: <TeachersDetail /> },
     { url: "add-teacher", component: <AddNewTeacher /> },
-    { url: "food", component: <Food /> },
-    { url: "food-details", component: <FoodDetails /> },
-    { url: "user", component: <User /> },
-    { url: "activity", component: <Activity /> },
-    { url: "calendar", component: <HomeCalendar /> },
-    //App Profile
-    { url: "app-profile", component: <AppProfile /> },
-    { url: "post-details", component: <PostDetails /> },
-    { url: "edit-profile", component: <EditProfile /> },
-    { url: "app-calender", component: <Calendar /> },
-    //App -> shops
-    { url: "ecom-product-grid", component: <ProductGrid /> },
-    { url: "ecom-product-list", component: <ProductList /> },
-    { url: "ecom-product-detail", component: <ProductDetail /> },
-    { url: "ecom-product-order", component: <ProductOrder /> },
-    { url: "ecom-checkout", component: <Checkout /> },
-    { url: "ecom-invoice", component: <Invoice /> },
-    { url: "ecom-customers", component: <Customers /> },
+   
+  
     //Charts
     { url: "chart-apexchart", component: <ApexChart /> },
     { url: "chart-rechart", component: <RechartJs /> },
@@ -152,18 +97,7 @@ const Markup = () => {
     { url: "ui-typography", component: <UiTypography /> },
     { url: "ui-grid", component: <UiGrid /> },
 
-    //Plugins
-    { url: "uc-select2", component: <Select2 /> },
-    { url: "uc-noui-slider", component: <MainNouiSlider /> },
-    { url: "uc-toastr", component: <Toastr /> },
-    { url: "uc-lightgallery", component: <Lightgallery /> },
-    { url: "uc-sweetalert", component: <MainSweetAlert /> },
-    { url: "form-element", component: <Element /> },
-    { url: "form-wizard", component: <Wizard /> },
-    { url: "form-ckeditor", component: <CkEditor /> },
-    { url: "form-validation", component: <FormValidation /> },
-    //widget
-    { url: "widget", component: <Widget /> },
+  
     /// table
     { url: 'table-filtering', component: <FilteringTable /> },
     { url: 'table-sorting', component: <SortingTable /> },
@@ -207,13 +141,6 @@ const Markup = () => {
           ))}
         </Route>
 
-        <Route element={<Layout5 />}>
-          <Route path='/file-manager' exact element={<FileManager />} />
-          <Route path='/chat' exact element={<FileChat />} />
-          <Route path='/email-compose' exact element={<Compose />} />
-          <Route path='/email-inbox' exact element={<Inbox />} />
-          <Route path='/email-read' exact element={<Read />} />
-        </Route>
         <Route element={<Layout6 />}>
           {routhPath2.map((data, i) => (
             <Route key={i} exact path={`/${data.url}`} element={data.component} />
