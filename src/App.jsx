@@ -11,7 +11,7 @@ import {
 import { isAuthenticated } from './store/selectors/AuthSelectors';
 /// Style
 import './assets/vendor/swiper/css/swiper-bundle.min.css';
-import "./assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css";
+// import "./assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css";
 import "./assets/css/style.css";
 
 

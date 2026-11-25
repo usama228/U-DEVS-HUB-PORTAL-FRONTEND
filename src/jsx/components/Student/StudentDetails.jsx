@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IMAGES, SVGICON } from '../Dashboard/Content';
 import { Dropdown } from 'react-bootstrap';
-import PaymentHistoryTable from './PaymentHistoryTable';
+
 
 import profile from './../../../assets/images/profile.svg';
 import location from './../../../assets/images/svg/location.svg';

@@ -251,7 +251,6 @@
 		"../scss/pages/_page-auth.scss",
 		"../scss/pages/_homepage.scss",
 		"../scss/pages/_teacher.scss",
-		"../scss/pages/_food.scss",
 		"../scss/pages/_student.scss",
 		"../scss/pages/_finance.scss",
 		"../scss/pages/_user.scss",

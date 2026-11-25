@@ -59,49 +59,7 @@ export const MenuList = [
             },
         ],
     },
-    {
-        title:'Food',
-        classsChange: 'mm-collapse',		
-        iconStyle: <i className="material-symbols-outlined">restaurant_menu</i>,
-        content: [
-            {
-                title: 'Food menu',
-                to: 'food',					
-            },
-            {
-                title: 'Food Detail',
-                to: 'food-details',					
-            },
-            
-        ],
-    },
-    {
-        title: 'File Manager',	
-        classsChange: 'mm-collapse',		
-        iconStyle: <i className="material-icons">folder</i>	,
-        content: [
-            {
-                title: 'File Manager',
-                to: 'file-manager',					
-            },
-            {
-                title: 'User',
-                to: 'user',
-            },
-            {
-                title: 'Calendar',
-                to: 'calendar',
-            },            
-            {
-                title: 'Chat',
-                to: 'chat',
-            },
-            {
-                title: 'Activity',
-                to: 'activity',
-            },
-        ],
-    },        
+    
     //Apps
     {
         title: 'Apps',	
